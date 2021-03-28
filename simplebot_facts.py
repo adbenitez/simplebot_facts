@@ -168,7 +168,7 @@ def _get_fact(category: str = None) -> str:
         soup = bs4.BeautifulSoup(resp.text, "html.parser")
     fact = soup.find(class_="fact-content").text.strip()
     if not category:
-        category = soup.find(class_="fact-categories").a.text.strip().lower()
+        category = soup.find(class_="fact-categories").a.text.strip().replace(" ", "-")
     return "{}\n\n#{} #Fact".format(
         fact, "".join(map(str.capitalize, category.split("-")))
     )
