@@ -3,7 +3,7 @@ import requests
 import simplebot
 from simplebot.bot import Replies
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 HEADERS = {
     "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0)"
     " Gecko/20100101 Firefox/60.0"
