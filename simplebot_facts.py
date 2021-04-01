@@ -184,5 +184,5 @@ class TestPlugin:
         assert "#Fact" in msg.text
 
     def test_category(self, mocker, lp):
-        msg = mocker.get_one_reply("/factGeneral")
-        assert "#General" in msg.text
+        msg = mocker.get_one_reply("/factLifeHacks")
+        assert "#LifeHacks" in msg.text
