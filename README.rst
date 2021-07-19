@@ -13,8 +13,8 @@ Facts
 .. image:: https://img.shields.io/pypi/l/simplebot_facts.svg
    :target: https://pypi.org/project/simplebot_facts
 
-.. image:: https://github.com/simplebot-org/simplebot_facts/actions/workflows/python-ci.yml/badge.svg
-   :target: https://github.com/simplebot-org/simplebot_facts/actions/workflows/python-ci.yml
+.. image:: https://github.com/adbenitez/simplebot_facts/actions/workflows/python-ci.yml/badge.svg
+   :target: https://github.com/adbenitez/simplebot_facts/actions/workflows/python-ci.yml
 
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
    :target: https://github.com/psf/black
