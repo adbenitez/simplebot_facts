@@ -11,4 +11,4 @@ Changelog
 
 - initial release
 
-.. _Unreleased: https://github.com/simplebot-org/simplebot/compare/v1.0.0...HEAD
+.. _Unreleased: https://github.com/adbenitez/simplebot/compare/v1.0.0...HEAD
