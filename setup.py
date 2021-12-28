@@ -39,7 +39,7 @@ if __name__ == "__main__":
         description=DESC,
         long_description=long_description,
         long_description_content_type="text/x-rst",
-        author="The SimpleBot Contributors",
+        author="adbenitez",
         author_email="adbenitez@nauta.cu",
         url=URL,
         keywords="simplebot plugin deltachat",
