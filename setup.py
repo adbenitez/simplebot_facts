@@ -24,7 +24,7 @@ if __name__ == "__main__":
     DESC = "Get random facts in Delta Chat (SimpleBot plugin)"
     URL = "https://github.com/simplebot-org/simplebot_facts"
 
-    with open("README.rst") as fh:
+    with open("README.rst", encoding="utf-8") as fh:
         long_description = fh.read()
 
     setup(
