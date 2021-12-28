@@ -3,7 +3,6 @@ import requests
 import simplebot
 from simplebot.bot import Replies
 
-__version__ = "1.0.1"
 HEADERS = {
     "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0)"
     " Gecko/20100101 Firefox/60.0"
@@ -169,20 +168,7 @@ def _get_fact(category: str = None) -> str:
     fact = soup.find(class_="fact-content").text.strip()
     if not category:
         category = soup.find(class_="fact-categories").a.text.strip().replace(" ", "-")
+    assert category
     return "{}\n\n#{} #Fact".format(
         fact, "".join(map(str.capitalize, category.split("-")))
     )
-
-
-class TestPlugin:
-    def test_fact(self, mocker, lp):
-        msg = mocker.get_one_reply("/fact")
-        assert "#Fact" in msg.text
-
-    def test_factOfTheDay(self, mocker, lp):
-        msg = mocker.get_one_reply("/factOfTheDay")
-        assert "#Fact" in msg.text
-
-    def test_category(self, mocker, lp):
-        msg = mocker.get_one_reply("/factLifeHacks")
-        assert "#LifeHacks" in msg.text
